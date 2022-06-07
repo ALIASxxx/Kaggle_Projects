@@ -64,16 +64,16 @@ class _NewTransactionState extends State<NewTransaction> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: <Widget>[
               TextField(
-                decoration: InputDecoration(labelText: 'Title'),
+                decoration: const InputDecoration(labelText: 'Title'),
                 controller: _titleController,
                 // onChanged: (val) {
                 //   titleInput = val;
                 // },
               ),
               TextField(
-                decoration: InputDecoration(labelText: 'Amount'),
+                decoration: const InputDecoration(labelText: 'Amount'),
                 controller: _amountController,
-                keyboardType: TextInputType.numberWithOptions(decimal: true),
+                keyboardType: const TextInputType.numberWithOptions(decimal: true),
                 onSubmitted: (_) => _submitData(),
                 // onChanged: (val) => amountInput = val,
               ),
